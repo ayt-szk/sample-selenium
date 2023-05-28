@@ -1,0 +1,13 @@
+version: "3"
+services:
+  sample-selenium:
+    # M系Mac利用時はこちらのイメージを利用
+    image: seleniarm/standalone-chromium:latest
+    # intelの場合はこちらのイメージを利用
+    # image: selenium/standalone-chrome:latest
+    volumes:
+      - /dev/shm:/dev/shm
+    container_name: sample-selenium
+    ports:
+      - 4444:4444
+      - 12345:5900
