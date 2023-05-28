@@ -40,5 +40,8 @@ Step2. Execute script.
 python src/sample.py
 ```
 
-
-
+### Stop local environment
+```
+cd [WORK_DIRECTORY]/sample-selenium/deployments/local/
+docker-compose down
+```
